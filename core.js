@@ -22,7 +22,7 @@ function seeMore(el, showTxt, hideTxt, maxChar, limitChar, classShow, classHide,
         let txtSpan = textC.substr(lenght, txts.lenght);
 
         if (type === 'inline') {
-            txts.innerHTML = `${txtFormated} 
+            txts.innerHTML = `<span>${txtFormated}</span> 
             <span class="see_more-content active ${type}">
                 <span class="btn-show ${class_btn__show.replace(/[.]/g ,'')}">${show_txt}</span>
                 <span class="minus-text">${txtSpan}
@@ -32,7 +32,7 @@ function seeMore(el, showTxt, hideTxt, maxChar, limitChar, classShow, classHide,
         `;
         } else if (type === 'float') {
             txts.className += ' see_more__float active'
-            txts.innerHTML = `${txtFormated} 
+            txts.innerHTML = `<span>${txtFormated}</span> 
                 <span class="see_more-content">
                     <span class="minus-text">${txtSpan}</span>               
                 </span>
@@ -82,8 +82,8 @@ function seeMore(el, showTxt, hideTxt, maxChar, limitChar, classShow, classHide,
 
 
 
-var teste = new seeMore('.query', 'Ver Mais', 'Ver menos', 10, 50, '.btn-show', '.btn-hide', 'inline')
+var teste = new seeMore('.query', 'Ver Mais', 'Ver menos', 10, 56, '.btn-show', '.btn-hide', 'inline')
 
 var teste2 = new seeMore('.query2', 'Ler Mais', 'Ler menos', 10, 60, '.btn-show2', '.btn-hide2', 'teste')
 
-var teste3 = new seeMore('.query3', 'Saber Mais', 'Saber menos', 10, 150, '.btn-show3', '.btn-hide3', 'float')
+var teste3 = new seeMore('.query3', 'Saber Mais', 'Saber menos', 10, 250, '.btn-show3', '.btn-hide3', 'float')
