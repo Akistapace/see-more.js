@@ -98,4 +98,7 @@ h2 {
     .bullets i {
         display: none;
     }
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: 0;
+    }
 }
