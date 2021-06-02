@@ -36,7 +36,7 @@ h2 {
 }
 
 .swiper-container {
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .card-group {
@@ -58,6 +58,7 @@ h2 {
     max-width: 530px;
     margin-bottom: 40px;
     border-radius: 8px;
+    position: relative;
 }
 
 .card.multiples {
@@ -89,7 +90,29 @@ h2 {
     margin-right: -7.3%;
 }
 
+.btn-souce-code {
+    position: absolute;
+    right: 4%;
+    background-color: black;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 2px 4px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-souce-code:hover {
+    opacity: 0.5;
+}
+
 @media (max-width:768px) {
+    .btn-souce-code {
+        top: 10%
+    }
+    h2 {
+        text-align: left;
+    }
     .card {
         width: calc(90% - 40px);
         margin-left: auto;
