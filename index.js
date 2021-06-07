@@ -30,7 +30,7 @@ var modal_close = document.querySelectorAll('.modal-close')
 modal.forEach((el, indice) => {
     el.setAttribute(`modal-${indice}`, '')
 
-    var e = el.parentElement.querySelector('.btn-souce-code')
+    var e = el.parentElement.querySelector('.btn-source-code')
     e.addEventListener('click', function() {
         if (!el.classList.contains('active')) {
             el.classList.add('active')
@@ -42,14 +42,14 @@ modal.forEach((el, indice) => {
 
 modal_close.forEach(el => {
     el.addEventListener('click', () => {
-        console.log(el.parentElement.parentElement.style.display = 'none')
+        el.parentElement.parentElement.classList.remove('active')
     })
 });
 
 window.addEventListener('click', (event) => {
     modal.forEach(el => {
         if (event.target == el) {
-            el.style.display = "none";
+            el.classList.remove('active')
         }
     });
 })

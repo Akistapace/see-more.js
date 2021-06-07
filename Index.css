@@ -90,7 +90,7 @@ h2 {
     margin-right: -7.3%;
 }
 
-.btn-souce-code {
+.btn-source-code {
     position: absolute;
     right: 4%;
     background-color: black;
@@ -102,12 +102,12 @@ h2 {
     cursor: pointer;
 }
 
-.btn-souce-code:hover {
+.btn-source-code:hover {
     opacity: 0.5;
 }
 
 @media (max-width:768px) {
-    .btn-souce-code {
+    .btn-source-code {
         top: 10%
     }
     h2 {
